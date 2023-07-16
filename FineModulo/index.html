@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body">
+    <!--navbar-->
+
+    <section class="nvb">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="Netflix_Logo_RGB.png" alt="" class="nvbimg mx-3"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">My List</a>
+                  </li>
+                </ul>
+                <form class="d-flex align-items-center" role="search">
+                    <a href="#"><ion-icon name="search-sharp" class="text-light fs-5"></ion-icon></a>
+                    <a href="#" class="text-decoration-none"><span class="mx-3 text-light fs-6">KIDS</span></a>
+                    <a href="#"><ion-icon name="notifications" class="text-light fs-5 mx-3"></ion-icon></a>
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="movies/avatar-1.jpg" alt="" class="frmimg">
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar">
+            <div class="container mx-4  d-flex justify-content-start">
+              <a class="navbar-brand text-light fs-2">TV Shows</a>
+              <a class="nav-link dropdown-toggle text-light mx-4 nvba d-flex justify-content-around
+               align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Genres</span>
+              </a>
+            </div>
+          </nav>
+
+    </section>
+
+
+    <section id="carosello1">
+        <!--schermo piccolo-->
+
+        <div class="container-fluid">
+            <h2 class="d-block d-xl-none text-center text-light mt-5 mb-4">Trending Now</h2>
+            <div id="1carouselsm" class="carousel slide d-block d-xl-none d-md-none">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/1.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/2.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/3.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/4.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/5.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/6.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev z-3" type="button" data-bs-target="#1carouselsm" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next z-3" type="button" data-bs-target="#1carouselsm" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--schermo medio-->
+
+        <div class="container-fluid">
+            <div id="1carouselmd" class="carousel slide d-none d-xl-none d-md-block">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/1.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/2.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/3.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/4.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/5.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/6.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev z-3" type="button" data-bs-target="#1carouselmd" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next z-3" type="button" data-bs-target="#1carouselmd" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--schermo grande-->
+
+        <div class="container-fluid d-none d-xl-block d-md-none">
+            <h2 class="text-light mx-4  mt-4  mb-0 d-none d-md-none d-xl-block">Trending Now</h2>
+            <div class="btn">
+                <button class="btnsn" onclick="sposta1()"></button>
+                <button class="btndx" onclick="spostadestra1()"></button>
+            </div>
+            <div class="rowgrd row gx-5">
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/1.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/2.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/3.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/4.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/5.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/6.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2  card1">
+                    <div class="card">
+                        <img src="movies/7.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carosello2">
+
+        <!--schermo piccolo-->
+        <div class="container-fluid">
+            <h2 class="d-block d-xl-none text-center text-light mt-5 mb-4">Watch It Again</h2>
+            <div id="2carouselsm" class="carousel slide d-block d-xl-none d-md-none">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/8.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/9.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/10.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/11.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/12.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/13.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev z-3" type="button" data-bs-target="#2carouselsm" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next z-3" type="button" data-bs-target="#2carouselsm" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--schermo medio-->
+        <div class="container-fluid">
+            <div id="2carouselmd" class="carousel slide d-none d-xl-none d-md-block">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/8.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/9.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/10.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/11.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/12.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <div class="card">
+                                        <img src="movies/13.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev z-3" type="button" data-bs-target="#2carouselmd" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next z-3" type="button" data-bs-target="#2carouselmd" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--schermo grande-->
+        <div class="container-fluid d-none d-xl-block d-md-none">
+            <h2 class="text-light mx-4 mt-5 mb-0 d-none d-md-none d-xl-block">Watch It Again</h2>
+            <div class="btn">
+                <button class="btnsn" onclick="sposta2()"></button>
+                <button class="btndx" onclick="spostadestra2()"></button>
+            </div>
+            <div class="rowgrd row gx-5">
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/7.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/8.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/9.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/10.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/11.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/12.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 col-xxl-2 card2">
+                    <div class="card">
+                        <img src="movies/13.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carosello3" class="dnon">
+
+            <!--schermo piccolo-->
+            <div class="container-fluid">
+                <h2 class="d-block d-xl-none text-center text-light mt-5 mb-4">New Releases</h2>
+                <div id="3carouselsm" class="carousel slide d-block d-xl-none d-md-none">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/14.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/15.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/16.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/17.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/18.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/3.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev z-3" type="button" data-bs-target="#3carouselsm" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next z-3" type="button" data-bs-target="#3carouselsm" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!--schermo medio-->
+            <div class="container-fluid">
+                <div id="3carouselmd" class="carousel slide d-none d-xl-none d-md-block">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/14.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/15.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/16.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/17.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/18.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center">
+                                        <div class="card">
+                                            <img src="movies/3.png" class="card-img-top" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev z-3" type="button" data-bs-target="#3carouselmd" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next z-3" type="button" data-bs-target="#3carouselmd" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!--schermo grande-->
+            <div class="container-fluid d-none d-xl-block d-md-none mb-5">
+                <h2 class="text-light mx-4 mt-5 mb-0 d-none d-md-none d-xl-block">New Releases</h2>
+                <div class="btn">
+                    <button class="btnsn" onclick="sposta3()"></button>
+                    <button class="btndx" onclick="spostadestra3()"></button>
+                </div>
+                <div class="rowgrd row gx-5">
+                    <div class="col-6 col-xl-3 col-xxl-2 card3">
+                        <div class="card">
+                            <img src="movies/14.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 col-xxl-2 card3">
+                        <div class="card">
+                            <img src="movies/15.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 col-xxl-2 card3">
+                        <div class="card">
+                            <img src="movies/16.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 col-xxl-2 card3">
+                        <div class="card">
+                            <img src="movies/17.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 col-xxl-2 card3">
+                        <div class="card">
+                            <img src="movies/18.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-3 col-xxl-2 card3">
+                        <div class="card">
+                            <img src="movies/1.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-5 col-lg-2 card3">
+                        <div class="card">
+                            <img src="movies/3.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mx-5 mt-4">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+            <div class="row ftrrow">
+                <div class="col-xl-3 col-md-6 col-6 mt-2">
+                    <a href="#"><p>Audio and Subtitles</p></a>
+                    <a href="#"><p>Media Center</p></a>
+                    <a href="#"><p>Privacy</p></a>
+                    <a href="#"><p>Contact Us</p></a>
+                </div>
+                <div class="col-xl-3 col-md-6 col-6">
+                    <a href="#"><p>Audio Description</p></a>
+                    <a href="#"><p>Invenstor</p></a>
+                    <a href="#"><p>Legal Notices</p></a>
+                </div>
+                <div class="col-xl-3 col-md-6 col-6">
+                    <a href="#"><p>Help Center</p></a>
+                    <a href="#"><p>Jobs</p></a>
+                    <a href="#"><p>Codice Promotional</p></a>
+                </div>
+                <div class="col-xl-3 col-md-6 col-6">
+                    <a href="#"><p>Gift Cards</p></a>
+                    <a href="#"><p>Terms of Use</p></a>
+                    <a href="#"><p>Corporats Information</p></a>
+                </div>
+            </div>
+            <div class="row mt-3 mb-2">
+                <div class="col-12 mx-5">
+                    <button class="ftrbtn">Service code</button>
+                </div>
+            </div>
+            <div class="row cpy">
+                <div class="col-12 mx-5 mt-1">
+                    <p>@ 1997-2019 Netflix.inc xxxxxxxxxxxxxxxxx
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>

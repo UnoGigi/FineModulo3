@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414;
+    overflow-x: hidden;
+}
+
+
+/*navbar*/
+
+
+.nvbimg {
+    width: 110px;
+    height: 40px;
+}
+
+.nvb a:focus {
+    font-weight: bold;
+}
+
+.frmimg {
+    width: 40px;
+    height: 40px;
+}
+
+.nvba {
+    background-color: black;
+    border: 1px solid white;
+    width: 120px;
+    height: 35px;
+    font-size: 17px;
+}
+
+
+/*caroselli*/
+
+h2 {
+    font-size: 25px;
+}
+
+.card1, .card2 , .card3 {
+    margin: 0 37px;
+}
+
+.card {
+    width: 327px;
+    height: 180px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.25);
+    z-index: 2;
+}
+
+
+
+.carousel-inner {
+    overflow: visible;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 200px;
+    height: 180px;
+    margin-right: 4px;
+}
+
+.rowgrd {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    height: 20px;
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btndx {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    position: relative;
+    top: 90px;
+    background: transparent;
+}
+
+.btnsn {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(130deg);
+    -webkit-transform: rotate(133deg);
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    position: relative;
+    top: 90px;
+    background: transparent;
+}
+
+.spostadestra {
+    transform: translatex(-550px);
+    transition: all 1s ease-out;
+}
+
+.spostadestra2 {
+    transform: translatex(-900px);
+    transition: all 1s ease-out;
+}
+
+.spostasinistra {
+    transform: translate(1px);
+    transition: all 1s ease-out;
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+
+    .card:hover {
+        transform: scale(1.25) translate(-30px);
+        z-index: 2;
+    }
+    
+    .spostadestra {
+        transform: translatex(-850px);
+        transition: all 1s ease-out;
+    }
+    
+    .spostadestra2 {
+        transform: translatex(-1100px);
+        transition: all 1s ease-out;
+    }
+    
+    .spostasinistra {
+        transform: translate(1px);
+        transition: all 1s ease-out;
+    }   
+
+    .card1 {
+        margin: 0 5px;
+    }
+
+    .card2 {
+        margin: 0 5px;
+    }
+
+    .card3 {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card:hover {
+        transform: scale(1.25) translate(-30px);
+        z-index: 2;
+    }
+}
+
+/*footer*/
+
+ion-icon {
+    color: #5A5A5A;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.ftrrow {
+    margin-left: 36px;
+}
+
+.ftrrow a {
+    text-decoration: none;
+    color: #5A5A5A;
+    font-size: 13px;
+}
+
+.ftrbtn {
+    background-color: transparent;
+    color: #5A5A5A;
+    border: 1px solid #5A5A5A;
+    width: 125px;
+}
+
+.cpy p {
+    font-size: 13px;
+    color: #5A5A5A;
+}
+
+
+
+
+/*extra*/
+/*#carosello3 {
+    opacity: 0;
+}*/
+
+.dnon {
+    opacity: 0;
+    transition: all 1.5s linear;
+}
+
+/*#carosello3.scrolled {
+    opacity: 1;
+}*/
+
+.dsi {
+    opacity: 1;
+    transition: all 1.5s linear;
+}
+
+
+
+
